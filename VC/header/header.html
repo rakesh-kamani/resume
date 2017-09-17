@@ -1,0 +1,28 @@
+<md-toolbar>
+    <ul id="top-menu" class="padding-0" layout="row" layout-align="space-between center">
+        <li flex="25" ng-class="{'active':state == 'profile'}">
+            <a ui-sref="app.profile()">
+                <i class="material-icons md-primary">portrait</i>
+                <span class="title">Profile</span>
+            </a>
+        </li>
+        <li flex="25" ng-class="{'active':state == 'work'}">
+            <a ui-sref="app.experience()">
+                <i class="material-icons md-primary">work</i>
+                <span class="title">Experience</span>
+            </a>
+        </li>
+        <li flex="25" ng-class="{'active':state == 'projects'}">
+            <a ui-sref="app.projects()">
+                <i class="material-icons md-primary">business_center</i>
+                <span class="title">Projects</span>
+            </a>
+        </li>
+        <li flex="25" ng-class="{'active':state == 'education'}">
+            <a ui-sref="app.education()">
+                <i class="material-icons md-primary">school</i>
+                <span class="title">Education</span>
+            </a>
+        </li>
+    </ul>
+</md-toolbar>

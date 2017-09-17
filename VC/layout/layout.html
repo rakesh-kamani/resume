@@ -1,0 +1,35 @@
+<div>
+    <md-sidenav md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+    <md-content layout="column" layout-align="space-between start">
+    <div class="img">
+        <img src="assets/img/me.jpg" alt="Rakesh kamani" />
+    </div>
+    <div class="contact">
+        <h1 class="name"> Rakesh Kamani </h1>
+        <ul>
+            <li class="mail"> rakesh.kamani564@gmail.com <i class="material-icons">email</i></li>
+            <li class="tel">+91 8099418225 <i class="material-icons">phone</i></li>
+        </ul>
+    </div>
+    <div class="keywords">
+        <h1 class="name"> Technical Skills </h1>
+        <md-chips>
+        <md-chip>HTML</md-chip>
+        <md-chip>CSS</md-chip>
+        <md-chip>Javascript</md-chip>
+        <md-chip>Bootstrap</md-chip>
+        <md-chip>Angular JS</md-chip>
+        <md-chip>JSON</md-chip>
+        </md-chips>
+    </div>
+    </md-content>
+    </md-sidenav>
+</div>
+<div layout="column" flex role="main">
+    <div>
+        <ng-include src="'VC/header/header.html'"></ng-include>
+    </div>
+    <div ui-view layout="column"></div>
+</div>
+<div class="sideMenu"></div>
+<a href="javascript:void(0)" class="menuOpen"><i class="material-icons">keyboard_arrow_right</i></a>

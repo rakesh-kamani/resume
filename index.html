@@ -1,0 +1,39 @@
+<html lang="en" ng-app="OR" >
+  <meta charset="utf-8">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <ui-view layout="row" flex></ui-view>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <script src="VC/layout/layout.js" type="text/javascript"></script>
+    <script src="VC/education/education.js" type="text/javascript"></script>
+    <script src="VC/experience/experience.js" type="text/javascript"></script>
+    <script src="VC/home/home.js" type="text/javascript"></script>
+    <script src="VC/projects/projects.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      $('.timer').countTo();
+      $('.menuOpen').click(function() {
+          $('.md-closed, .sideMenu').addClass('slide');
+      });
+      $('.sideMenu').click(function(){
+        $(this).removeClass('slide');
+        $('.md-closed').removeClass('slide');
+      });
+    </script>
+  </body>
+</html>
