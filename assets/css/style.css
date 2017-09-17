@@ -350,6 +350,30 @@ md-content.content  {
 .menuOpen{
     display: none;
 }
+
+@media only screen and (max-width: 600px){
+    .menuOpen {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: #ff6340;
+        left: 0px;
+        bottom: 32px;
+        display: block;
+    }
+    .menuOpen > i {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        margin: -16px auto 0px;
+        font-size: 32px;
+        line-height: normal;
+    }
+}
+
 @media only screen and (max-width: 767px){
     .card > .or-work-years {
         display: block;
@@ -396,24 +420,5 @@ md-content.content  {
     .sideMenu.slide{
         right: 0px;
     }
-    .menuOpen {
-        position: fixed;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        background-color: #ff6340;
-        left: 0px;
-        bottom: 32px;
-        display: block;
-    }
-    .menuOpen > i {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 50%;
-        margin: -16px auto 0px;
-        font-size: 32px;
-        line-height: normal;
-    }
+ 
 }
