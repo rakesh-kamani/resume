@@ -1,3 +1,7 @@
-angular.module("OR").controller("LayoutController",["$scope","$state",function($scope,$state) {
+angular.module("OR").controller("LayoutController",["$scope","$mdSidenav",function($scope,$mdSidenav) {
 
+    $scope.open = function() {
+        console.log("OPEN");
+        $mdSidenav('left').toggle();
+    };
 }]);

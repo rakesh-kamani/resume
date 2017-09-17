@@ -1,5 +1,5 @@
 <div>
-    <md-sidenav md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+    <md-sidenav md-component-id="left" >
     <md-content layout="column" layout-align="space-between start">
     <div class="img">
         <img src="assets/img/me.jpg" alt="Rakesh kamani" />
@@ -32,4 +32,4 @@
     <div ui-view layout="column"></div>
 </div>
 <div class="sideMenu"></div>
-<a href="javascript:void(0)" class="menuOpen"><i class="material-icons">keyboard_arrow_right</i></a>
+<a ng-click="open()" class="menuOpen"><i class="material-icons">keyboard_arrow_right</i></a>
